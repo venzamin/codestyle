@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace R.Client.Services
+namespace Portfolio.Networks
 {
     public interface INetworkProvider
     {
