@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Portfolio.Networks;
+using System;
 
-namespace Portfolio.Networks
+namespace Portfolio.Services
 {
     public abstract class NetworkService : IDisposable
     {
