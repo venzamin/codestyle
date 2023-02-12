@@ -3,7 +3,7 @@ using Portfolio.Framework;
 using Portfolio.Services;
 using System.Linq;
 
-namespace R.Client
+namespace Portfolio.Client
 {
     public class Lobby : Section
     {

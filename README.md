@@ -22,3 +22,13 @@
 * 수신된 패킷을 기반으로 Processor에서 처리
 * 송수신 데이터는 Entity에 저장
 * 화면에 표현은 MessageQueue를 통하여 Section에 전달하여 View혹은 UI에서 처리합니다.
+
+*Processors*
+--
+* Service에서 전달된 Packet을 분석하여 Entity에 저장 / 필요에 따라 연산 및 상태 전환등을 담당
+* Section에 Message를 전송하는 경우도 Processor에서 하며 목표는 보통 대응하는 View에게 전달
+
+*Views*
+--
+* 화면영역에서 발생하는 것들 담당. 작게는 Activate State 변경 및 Animation State 변경등에서 필요에 따른 연들등을 하는 class들
+* ActorView : Animator를 통하여 Animation 상태를 변경할 View들의 부모로 Attribute를 통하여 이벤트를 등록할 수 있습니다.
